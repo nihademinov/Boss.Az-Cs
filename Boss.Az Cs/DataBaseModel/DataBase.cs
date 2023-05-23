@@ -22,7 +22,6 @@ namespace Boss.Az_Cs.DataBaseModel
         private List<Company>? AllCompanies = new List<Company>();
 
 
-
         public List<Worker> Add_Wroker(Worker worker)
         {
             AllWorkers.Add(worker);
