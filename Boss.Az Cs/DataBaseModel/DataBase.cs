@@ -23,7 +23,6 @@ namespace Boss.Az_Cs.DataBaseModel
 
 
 
-
         public List<Worker> Add_Wroker(Worker worker)
         {
             AllWorkers.Add(worker);
