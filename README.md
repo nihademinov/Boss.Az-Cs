@@ -1,0 +1,1 @@
+BOOS.Az Console project in C#. This Project is vacancy web site. You can creat your account with employer or worker. If you sign up with Employer, you can add your vacancy and apply cvies.You sign up with worker,you can see all vacancy and apply them.
