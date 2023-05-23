@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Boss.Az_Cs.CompanyModel
 {
-    internal class Company
+    public class Company
     {
         private string? _CompanyName;
         private string? _CompanyAddress;
