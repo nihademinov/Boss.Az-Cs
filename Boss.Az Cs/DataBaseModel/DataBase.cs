@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Boss.Az_Cs.AdminModel;
+using Boss.Az_Cs.CompanyModel;
+using Boss.Az_Cs.CVMOdel;
 using Boss.Az_Cs.EmployerModel;
 using Boss.Az_Cs.VacancyModel;
 using Boss.Az_Cs.WorkerModel;
