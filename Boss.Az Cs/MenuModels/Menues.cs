@@ -5,10 +5,7 @@ using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
-
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.MenuModels
 {
     public static class Menues
     {

@@ -5,9 +5,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.PersonModel
 {
-    public  class Person
+    public class Person
     {
         private Guid _Id;
         private string? _Name;
@@ -46,8 +46,8 @@ namespace Boss.Az_Cs
             get { return _Name; }
             set
             {
-                
-                    _Name = value;
+
+                _Name = value;
             }
         }
 
@@ -56,8 +56,8 @@ namespace Boss.Az_Cs
             get { return _Surname; }
             set
             {
-               
-                    _Surname = value;
+
+                _Surname = value;
             }
         }
 
@@ -67,8 +67,8 @@ namespace Boss.Az_Cs
             get { return _Email; }
             set
             {
-               
-                    _Email = value;
+
+                _Email = value;
             }
         }
 
@@ -77,8 +77,8 @@ namespace Boss.Az_Cs
             get { return _Password; }
             set
             {
-               
-                    _Password = value;
+
+                _Password = value;
             }
         }
 
@@ -87,8 +87,8 @@ namespace Boss.Az_Cs
             get { return _Age; }
             set
             {
-               
-                    _Age = value;
+
+                _Age = value;
             }
         }
 

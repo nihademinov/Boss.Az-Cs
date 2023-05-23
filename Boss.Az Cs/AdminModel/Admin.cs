@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Boss.Az_Cs.CVMOdel;
+using Boss.Az_Cs.PersonModel;
+using Boss.Az_Cs.VacancyModel;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.AdminModel
 {
-    internal class Admin:Person
+    internal class Admin : Person
     {
         private List<CV>? RequestCv = new List<CV>();
         private List<Vacancy>? RequestVacancies = new List<Vacancy>();
 
-        public Admin(string name, int age, string surname, string email, string password) :base(name,age,surname,email,password)
+        public Admin(string name, int age, string surname, string email, string password) : base(name, age, surname, email, password)
         {
 
         }

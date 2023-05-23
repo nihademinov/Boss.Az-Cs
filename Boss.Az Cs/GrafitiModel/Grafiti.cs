@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.GrafitiModel
 {
-    static  internal class Grafiti
+    static internal class Grafiti
     {
         public static void Print_Logo_()
         {

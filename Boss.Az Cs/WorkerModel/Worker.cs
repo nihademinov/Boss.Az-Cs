@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Boss.Az_Cs.CVMOdel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,17 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.WorkerModel
 {
-    internal class Worker :Person
+    internal class Worker : Person
     {
-        private string ?_City;
-        private string ?_Phone;
+        private string? _City;
+        private string? _Phone;
         private CV _Cv;
 
 
         [JsonConstructor]
-        public Worker(string? city, string? phone, CV cv, string name, int age, string surname, string email, string password) :base(name,age,surname,email,password)
+        public Worker(string? city, string? phone, CV cv, string name, int age, string surname, string email, string password) : base(name, age, surname, email, password)
         {
             Property_City = city;
             Property_Phone = phone;
@@ -28,7 +29,7 @@ namespace Boss.Az_Cs
             Property_City = city;
             Property_Phone = phone;
         }
-       
+
 
 
         public override string ToString() => $@"
@@ -39,7 +40,7 @@ Age:{Property_Age}
 Email:{Property_Email}
 City:{_City}
 _Phone:{_Phone}";
-       
+
 
 
 
@@ -47,17 +48,19 @@ _Phone:{_Phone}";
         public string? Property_City
         {
             get { return _City; }
-            set { 
-                
-                    _City = value; 
+            set
+            {
+
+                _City = value;
             }
         }
-        public string? Property_Phone   
+        public string? Property_Phone
         {
             get { return _Phone; }
-            set {  
-                
-                    _Phone = value; 
+            set
+            {
+
+                _Phone = value;
             }
         }
         public CV Property_CV
@@ -65,6 +68,6 @@ _Phone:{_Phone}";
             get { return _Cv; }
             set { _Cv = value; }
         }
-      
+
     }
 }
