@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Boss.Az_Cs.EmployerModel;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.CVMOdel
 {
     internal class CV
     {
@@ -23,7 +24,7 @@ namespace Boss.Az_Cs
         private List<Employer>? AcceptEmployer = new List<Employer>();
 
 
-        public CV(List<string>? language, List<string>? languageSkillScore, string? uniName, string? facultyName, string? skills, double enteranceScore, string? companies, string? differenceDiplom, string? githubLink, string? linkednLink,string email)
+        public CV(List<string>? language, List<string>? languageSkillScore, string? uniName, string? facultyName, string? skills, double enteranceScore, string? companies, string? differenceDiplom, string? githubLink, string? linkednLink, string email)
         {
             Property_EmailWorker = email;
             Property_Language = language;
@@ -38,7 +39,7 @@ namespace Boss.Az_Cs
             Property_LinkednLink = linkednLink;
         }
 
-        
+
         public override string ToString() => $@"
 University:{_UniName}
 Faculty:{_FacultyName}
@@ -147,7 +148,7 @@ Mail:{Property_EmailWorker}";
 
         public double Property_EnteranceScore
         {
-            get {return _EnteranceScore!;}
+            get { return _EnteranceScore!; }
             set
             {
                 if (value < 0)
@@ -196,8 +197,8 @@ Mail:{Property_EmailWorker}";
             get { return _GithubLink!; }
             set
             {
-                _GithubLink = value; 
-             
+                _GithubLink = value;
+
             }
         }
 
@@ -208,8 +209,8 @@ Mail:{Property_EmailWorker}";
             get { return _LinkednLink!; }
             set
             {
-                _LinkednLink = value;   
-              
+                _LinkednLink = value;
+
             }
         }
 

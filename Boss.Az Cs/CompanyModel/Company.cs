@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.CompanyModel
 {
     internal class Company
     {
@@ -23,18 +23,20 @@ namespace Boss.Az_Cs
         public string Property_CompanyName
         {
             get { return _CompanyName; }
-            set {
-                
-                    _CompanyName = value; 
+            set
+            {
+
+                _CompanyName = value;
             }
         }
 
         public string Property_CompanyAddress
         {
             get { return _CompanyAddress; }
-            set { 
-               
-                    _CompanyAddress = value; 
+            set
+            {
+
+                _CompanyAddress = value;
             }
         }
 

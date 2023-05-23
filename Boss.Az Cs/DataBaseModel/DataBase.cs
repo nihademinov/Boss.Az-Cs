@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Boss.Az_Cs.AdminModel;
+using Boss.Az_Cs.EmployerModel;
+using Boss.Az_Cs.VacancyModel;
+using Boss.Az_Cs.WorkerModel;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.DataBaseModel
 {
     internal class DataBase
     {
@@ -16,11 +20,11 @@ namespace Boss.Az_Cs
         private List<Company>? AllCompanies = new List<Company>();
 
 
-        
+
 
         public List<Worker> Add_Wroker(Worker worker)
         {
-            AllWorkers.Add(worker); 
+            AllWorkers.Add(worker);
             return AllWorkers;
         }
 
@@ -38,7 +42,7 @@ namespace Boss.Az_Cs
 
         public List<Vacancy> Add_Vacancies(Vacancy vacancy)
         {
-           AllVacancies.Add(vacancy);
+            AllVacancies.Add(vacancy);
             return AllVacancies;
         }
 
@@ -56,7 +60,7 @@ namespace Boss.Az_Cs
         }
 
 
-        
+
 
         public List<Worker> Property_Listworker
         {

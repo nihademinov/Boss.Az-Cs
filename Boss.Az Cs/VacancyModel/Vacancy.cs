@@ -4,8 +4,9 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using Boss.Az_Cs.WorkerModel;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.VacancyModel
 {
     internal class Vacancy
     {
@@ -17,7 +18,7 @@ namespace Boss.Az_Cs
         private string? _MailEmployer;
         private List<Worker>? AcceptWorker = new List<Worker>();
 
-        public Vacancy(string? jobName, string? jobDescription, string? jobExperience, double? salary,string? mail)
+        public Vacancy(string? jobName, string? jobDescription, string? jobExperience, double? salary, string? mail)
         {
             _VacancyId = Guid.NewGuid();
             Property_JobName = jobName;
@@ -56,27 +57,30 @@ namespace Boss.Az_Cs
         public string? Property_JobName
         {
             get { return _JobName; }
-            set { 
-              
-                    _JobName = value;
+            set
+            {
+
+                _JobName = value;
             }
         }
 
         public string? Property_JobDescription
         {
             get { return _JobDescription; }
-            set {
-               
-                    _JobDescription = value; 
+            set
+            {
+
+                _JobDescription = value;
             }
         }
 
         public string? Property_JobExperience
         {
             get { return _JobExperience; }
-            set {
-                
-                    _JobExperience = value; 
+            set
+            {
+
+                _JobExperience = value;
             }
         }
 
@@ -88,9 +92,10 @@ namespace Boss.Az_Cs
         public double? Property_Salary
         {
             get { return _Salary; }
-            set { 
-                
-                    _Salary = value; 
+            set
+            {
+
+                _Salary = value;
             }
         }
 
@@ -101,6 +106,6 @@ Job Description:{Property_JobDescription}
 Job Expreience:{Property_JobExperience}
 Salary:{Property_Salary}
 Mail:{Property_MailEmployer}";
-        
+
     }
 }

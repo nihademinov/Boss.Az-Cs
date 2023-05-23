@@ -3,6 +3,16 @@ using System.Net;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using Boss.Az_Cs.AdminModel;
+using Boss.Az_Cs.CompanyModel;
+using Boss.Az_Cs.CVMOdel;
+using Boss.Az_Cs.DataBaseModel;
+using Boss.Az_Cs.EmployerModel;
+using Boss.Az_Cs.GrafitiModel;
+using Boss.Az_Cs.MenuModels;
+using Boss.Az_Cs.PersonModel;
+using Boss.Az_Cs.VacancyModel;
+using Boss.Az_Cs.WorkerModel;
 
 namespace Boss.Az_Cs
 {

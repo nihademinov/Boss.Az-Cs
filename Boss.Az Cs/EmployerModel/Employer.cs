@@ -1,20 +1,23 @@
-﻿using Newtonsoft.Json;
+﻿using Boss.Az_Cs.CompanyModel;
+using Boss.Az_Cs.PersonModel;
+using Boss.Az_Cs.VacancyModel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boss.Az_Cs
+namespace Boss.Az_Cs.EmployerModel
 {
-    internal class Employer:Person
+    internal class Employer : Person
     {
         private Company _Company;
         private Vacancy _Vacancy;
 
 
         [JsonConstructor]
-        public Employer(Company company,Vacancy vacancy,string name,string surname,string email,string password):base(name,surname,email,password)
+        public Employer(Company company, Vacancy vacancy, string name, string surname, string email, string password) : base(name, surname, email, password)
         {
             Property_Company = company;
             Property_Vacancy = vacancy;
@@ -26,7 +29,7 @@ namespace Boss.Az_Cs
 
 
 
-        
+
         public Company Property_Company
         {
             get { return _Company; }
